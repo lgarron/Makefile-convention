@@ -13,7 +13,8 @@ system.
 | `build` | Build the entire project. | Optimized code, build artifacts (e.g. `zip` files). |
 | `dev` | Build the project in development mode. | Local server, rebuild on source file change, unminified code. |
 | `test` | Run the main project tests. | Minimal side effects. |
-| `lint` | Run the source code through a formatting/style linter. | Automatically fix code when possible. |
+| `lint` | Run the source code through a formatting/style linter. | Do not fix code. |
+| `format` | Run the source code through a formatting/style linter. | Automatically fix code when possible. |
 | `clean` | Reset the project for development so that the next build happens "from scratch". | Remove build artifacts, dependency directories, etc. May undo some or all of `make setup` depending on the nature of the project. |
 | `deploy` | Deploy or upload a website project. | Depends on `build`. |
 | `publish` | Publish a library on the relevant package manager. | Depends on `build` and `test`. |
