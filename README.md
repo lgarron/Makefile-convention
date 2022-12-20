@@ -14,7 +14,7 @@ system.
 | `test` | Run the main project tests. | Minimal side effects. |
 | `lint` | Run the source code through a formatting/style linter. | Do not fix code. |
 | `format` | Run the source code through a formatting/style linter. | Automatically fix code when possible. |
-| `clean` | Reset the project for development so that the next build happens "from scratch". | Remove build artifacts, dependency directories, etc. May undo some or all of `make setup` depending on the nature of the project. |
+| `clean` | Reset the project for development so that the next build happens "from scratch". | Remove build artifacts, dependency directories, etc. May undo some or all of `make setup` depending on the nature of the project. Usually does **not** remove `./node_modules` in JS/TS projects. |
 | `deploy` | Deploy or upload a website project. | Depends on `build`. |
 | `publish` | Publish a library on the relevant package manager. | Depends on `build` and `test`. |
 | `install` | Install the project locally. | Depends on `build`. |
