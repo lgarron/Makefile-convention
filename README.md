@@ -8,7 +8,6 @@ system.
 
 | Target | Effect | Common Features |
 |--------|--------|-----------------|
-| `all` | Usually an alias for `build`. | |
 | `setup` | Prepare the local repository for development. | Install dependencies, create files/folders, run immediately after `git checkout`. Usually not a dependency of `build`/`dev` (for performance). |
 | `build` | Build the entire project. | Optimized code, build artifacts (e.g. `zip` files). |
 | `dev` | Build the project in development mode. | Local server, rebuild on source file change, unminified code. |
