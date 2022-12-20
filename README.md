@@ -9,7 +9,7 @@ system.
 | Target | Effect | Common Features |
 |--------|--------|-----------------|
 | `setup` | Prepare the local repository for development. | Install dependencies, create files/folders, run immediately after `git checkout`. Usually not a dependency of `build`/`dev` (for performance). |
-| `build` | Build the entire project. | Optimized code, build artifacts (e.g. `zip` files). |
+| `build` | Build the entire project. | Optimized code, build artifacts (e.g. `zip` files). Commonly depends on `clean`. |
 | `dev` | Build the project in development mode. | Local server, rebuild on source file change, unminified code. |
 | `test` | Run the main project tests. | Minimal side effects. |
 | `lint` | Run the source code through a formatting/style linter. | Do not fix code. |
