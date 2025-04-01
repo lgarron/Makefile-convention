@@ -14,8 +14,8 @@ system.
 | `test` | Run the main project tests. | Minimal side effects. |
 | `lint` | Run the source code through a formatting/style linter. | Do not modify code. |
 | `format` | Run the source code through a formatting/style linter. | Automatically fix code when possible. |
-| `clean` | Clean build artifacts so that the next build happens "from scratch". | Remove builds, caches, dependency directories, etc. May undo some or all of `make setup` depending on the nature of the project. Usually does **not** remove `./node_modules` in JS/TS projects (can be expense to re-download on a slow connection) or `./target` in Rust projects (can be kept without causing correctness issues). |
-| `reset` | Reset as much of the project to a clean checkout as possible. | Remove all project-scoped dependencies (e.g. `node_modules`), tooling, credentials, etc. |
+| `clean` | Clean build artifacts so that the next build happens "from scratch". | Remove builds, caches, dependency directories, etc. May undo some or all of `make setup` depending on the nature of the project. Usually does **not** remove `./node_modules` in JS/TS projects (can be expense to re-download on a slow connection) or `./target` in Rust projects (can be kept without causing correctness issues). This should preserve any uncommitted changes to the source code (i.e. the output of `git status` should not be affected). |
+| `reset` | Reset as much of the project to a clean checkout as possible. | Remove all project-scoped dependencies (e.g. `node_modules`), tooling, credentials, etc. This should preserve any uncommitted changes to the source code (i.e. the output of `git status` should not be affected). |
 | `deploy` | Deploy or upload a website project. | Depends on `build`. |
 | `publish` | Publish a library on the relevant package manager. | Depends on `build` and `test`. |
 | `install` | Install the project locally. | Depends on `build`. |
